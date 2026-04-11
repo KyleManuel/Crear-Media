@@ -116,40 +116,95 @@ export default function Home() {
       quote: "CrearMedia was key to transforming our training processes: they designed simple interactive courses aligned with our reality. They accompanied us at all times, understanding what we needed without imposing solutions, but creating with us from closeness and strategy.",
       author: "Marta Lopez",
       role: "Learning Manager",
-      logo: "/logo_dollarcity.svg",
+      logo: "logos/logo_dollarcity.svg",
     },
     {
       quote: "At Mobility ADO we had the challenge of transmitting our values to operational profiles that are difficult to achieve in person. CrearMedia designed an augmented reality training strategy with great acceptance and outstanding results: more than 6,000 employees participate with a profit of more than 90%. They have been a key and committed partner throughout the process.",
       author: "Veronica Delgadillo",
       role: "Content Head",
-      logo: "/logo_ado.svg",
+      logo: "logos/logo_ado.svg",
     },
     {
       quote: "CrearMedia understood our training methodology and transformed it into key instructional videos for trainers. His team integrated with us, providing creativity and technical experience. The results have been so positive that we presented the project to management and the Tec de Monterrey. Today they are strategic allies to strengthen our training.",
       author: "Jesus Martinez",
       role: "Human Talent",
-      logo: "/logo_gepp.svg",
+      logo: "logos/logo_gepp.svg",
     },
     {
       quote: "Working with CrearMedia has been invaluable. We developed an international reference educational model to empower entrepreneurs and close digital gaps. As a coordinator with 18 years of experience, I highlight her commitment, quality and superior results than expected. If you are looking for a real change, I recommend them 100%.",
       author: "Eliana Silvero",
       role: "Digital Entrepreneurship Coordinator",
-      logo: "/logo_adopem.svg",
+      logo: "logos/logo_adopem.svg",
     },
     {
       quote: "Thanks to CrearMedia we digitized and scaled our business impact methodology. We went from 457 to more than 6,000 companies served throughout the country, with an accessible, powerful solution with a vision of growth without borders.",
       author: "Jhon Fonseca",
       role: "Content Virtualization Leader",
-      logo: "/logo_camara-bogota.svg",
+      logo: "logos/logo_camara-bogota.svg",
     },
     {
       quote: "Alejandro's team stands out for its innovation, agility and focus on results. They design learning experiences that really develop skills, adapting to the context of each client with excellence and commitment.",
       author: "Ximena Duarte",
       role: "Human Talent",
-      logo: "/logo_camara-cali.svg",
+      logo: "logos/logo_camara-cali.svg",
     },
   ];
   const groups = chunkArray(testimonials, 3);
+
+  const brands = [
+    "logos/logo_varta.svg",
+    "logos/logo_tigo.svg",
+    "logos/logo_brinks.svg",
+    "logos/logo_spectrum.svg",
+    "logos/logo_sony.svg",
+    "logos/logo_sena.svg",
+    "logos/logo_sab.svg",
+    "logos/logo_nestle.svg",
+    "logos/logo_nissan.svg",
+    "logos/logo_pantaleon.svg",
+    "logos/logo_pepsi.svg",
+    "logos/logo_purina.svg",
+    "logos/logo_roche.svg",
+    "logos/logo_oxfam.svg",
+    "logos/logo_naturaceites.svg",
+    "logos/logo_mintic.svg",
+    "logos/logo_mineduacion.svg",
+    "logos/logo_micoope.svg",
+    "logos/logo_merck.svg",
+    "logos/logo_mapfre.svg",
+    "logos/logo_liverpool.svg",
+    "logos/logo_grupo.svg",
+    "logos/logo_helm.svg",
+    "logos/logo_icontec.svg",
+    "logos/logo_interbank.svg",
+    "logos/logo_legis.svg",
+    "logos/logo_gpa.svg",
+    "logos/logo_gobierno.svg",
+    "logos/logo_gepp.svg",
+    "logos/logo_intecap.svg",
+    "logos/logo_fresenius.svg",
+    "logos/logo_femsa.svg",
+    "logos/logo_dollarcity.svg",
+    "logos/logo_colsubsidio.svg",
+    "logos/logo_cmi.svg",
+    "logos/logo_cintel.svg",
+    "logos/logo_copachisa.svg",
+    "logos/logo_cruz.svg",
+    "logos/logo_canal.svg",
+    "logos/logo_cinepolis.svg",
+    "logos/logo_camara-bogota.svg",
+    "logos/logo_camara-cali.svg",
+    "logos/logo_bi.svg",
+    "logos/logo_bcp.svg",
+    "logos/logo_bbva.svg",
+    "logos/logo_allianz.svg",
+    "logos/logo_aseguradora.svg",
+    "logos/logo_banco-caja.svg",
+    "logos/logo_banco-de-occidente.svg",
+    "logos/logo_ado.svg",
+    "logos/logo_ach.svg",
+    "logos/logo_inversora.svg"
+  ];
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
@@ -170,7 +225,7 @@ export default function Home() {
         <section className="grid items-center gap-12 mx-42 px-16 py-10 lg:grid-cols-[0.9fr_1.1fr] rounded-[32px] border border-[#e8e8e8] bg-white shadow-[0_0_10px_5px_rgb(103_103_103_/_0.52)]">
           <div className="flex justify-center">
             <Image
-              src="/logo_crear-media.svg"
+              src="logos/logo_crear-media.svg"
               alt="CrearMedia logo"
               className="h-auto max-w-full"
               width={500}
@@ -494,6 +549,60 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        <section className="w-full py-17
+          relative overflow-hidden bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/background_image-24.jpg')" }}
+        >
+          <div className="mx-auto max-w-[1700px]">
+            <div className="relative bg-white pt-5 pb-16">
+              <div className="mb-10 overflow-hidden">
+                <div className="flex w-max animate-marquee items-center gap-16">
+                  {[...brands, ...brands].map((logo, index) => (
+                    <div key={index} className="shrink-0">
+                      <Image
+                        src={logo}
+                        alt=""
+                        width={180}
+                        height={80}
+                        className="h-[70px] w-auto object-contain grayscale select-none pointer-events-none"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <p className="max-w-[700px] text-[20px] font-semibold leading-[1.5] text-[#7a7a7a]">
+                  These brands have already transformed learning into a competitive
+                  advantage
+                </p>
+              </div>
+              <button className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#5cbb4a] px-8 py-2 text-[18px] font-semibold text-white">
+                Want to be part? &gt;
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full px-32 py-16">
+          <div className="mx-auto max-w-[1200px]">
+            <div className="mb-8 text-center">
+              <h2 className="text-[28px] font-bold leading-[1.2] text-[#4d4d4d]">
+                Learning is not memorizing.
+              </h2>
+              <h2 className="text-[28px] font-bold leading-[1.2] text-[#4d4d4d]">
+                It is feeling, connecting, transforming.
+              </h2>
+            </div>
+
+            <div className="overflow-hidden rounded-[12px]">
+              <video className="w-full" controls poster="/video-poster.jpg">
+                <source src="/video_CEO-Inteligencia-Artificial-CrearMedia-1" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </section>
       </main>
