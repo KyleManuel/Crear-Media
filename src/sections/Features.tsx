@@ -3,11 +3,11 @@ import { features } from "@/data/home";
 
 export default function FeaturesSection() {
     return (
-        <section className="mx-auto max-w-[1100px] py-20">
+        <section id="services" className="mx-auto max-w-[1100px] py-20">
             <div className="grid items-start gap-6 grid-cols-[0.6fr_1.4fr]">
             <div className="flex justify-center justify-self-end">
                 <Image
-                src="/icon_person-2.svg"
+                src="/icons/icon_person-2.svg"
                 alt=""
                 width={90}
                 height={90}

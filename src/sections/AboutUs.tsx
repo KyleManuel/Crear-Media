@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUsSection() {
     return (
-        <section className="grid items-center gap-12 mx-42 px-16 py-10 lg:grid-cols-[0.9fr_1.1fr] rounded-[32px] border border-[#e8e8e8] bg-white shadow-[0_0_10px_5px_rgb(103_103_103_/_0.52)]">
+        <section id="about" className="grid items-center gap-12 mx-42 px-16 py-10 lg:grid-cols-[0.9fr_1.1fr] rounded-[32px] border border-[#e8e8e8] bg-white shadow-[0_0_10px_5px_rgb(103_103_103_/_0.52)]">
             <div className="flex justify-center">
                 <Image
                     src="/logos/logo_crear-media.svg"
@@ -20,7 +20,7 @@ export default function AboutUsSection() {
                 We Are
                 <span className="text-[#5cbb4a]">CrearMedia</span>
                 <Image
-                    src="/green-star.svg"
+                    src="/icons/green-star.svg"
                     alt=""
                     width={24}
                     height={24}

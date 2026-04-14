@@ -7,7 +7,7 @@ export default function SuccessStories() {
             <div className="grid items-start gap-6 grid-cols-[0.3fr_1.7fr]">
             <div className="flex justify-center">
                 <Image
-                src="/icon_person-2.svg"
+                src="/icons/icon_person-2.svg"
                 alt=""
                 width={90}
                 height={90}
@@ -42,7 +42,7 @@ export default function SuccessStories() {
 
 export function ListStories() {
     return (
-        <section className="w-full pl-60 pr-50 py-16">
+        <section id="stories" className="w-full pl-60 pr-50 py-16">
             <div className="mx-auto max-w-[1180px]">
             <div className="space-y-16">
                 {stories.map((item) => (
@@ -59,9 +59,14 @@ export function ListStories() {
                         {item.description2 && <p>{item.description2}</p>}
                         {item.description3 && <p>{item.description3}</p>}
                     </div>
-                    <button className="mt-8 rounded-[16px] border-2 border-[#5cbb4a] px-6 py-3 text-[18px] font-medium text-[#5cbb4a] transition hover:bg-[#5cbb4a] hover:text-white">
+                    <a
+                        href={`stories/${item.id}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-8 inline-block rounded-[16px] border-2 border-[#5cbb4a] px-6 py-3 text-[18px] font-medium text-[#5cbb4a] transition hover:bg-[#5cbb4a] hover:text-white"
+                        >
                         {item.buttonText}
-                    </button>
+                    </a>
                     </div>
                     <div>
                     <Image

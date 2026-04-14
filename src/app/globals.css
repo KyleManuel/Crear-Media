@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #f3f3f3;
     --foreground: #ededed;
   }
 }
@@ -29,12 +29,16 @@
   }
 }
 
-.animate-marquee {
-  animation: marquee 500s linear infinite;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+.animate-marquee {
+  animation: marquee 500s linear infinite;
 }

@@ -2,7 +2,7 @@ export default function HeroVideoSection() {
   return (
       <section className="px-32">
         <video controls>
-          <source src="/video-crear-media.mp4" type="video/mp4" />
+          <source src="/videos/video_crear-media.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="flex w-full justify-center py-8">
@@ -29,7 +29,7 @@ export function CEOVideo() {
 
           <div className="overflow-hidden rounded-[12px]">
             <video className="w-full" controls poster="/video-poster.jpg">
-              <source src="/video_CEO-Inteligencia-Artificial-CrearMedia-1.mp4" type="video/mp4" />
+              <source src="/videos/video_CEO-Inteligencia-Artificial.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

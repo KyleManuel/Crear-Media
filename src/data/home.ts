@@ -18,41 +18,41 @@ export const countries = [
 
 export const stats = [
     {
-      icon: "/icon_object-17.svg",
+      icon: "/icons/icon_object-17.svg",
       title: "25 years of experience",
     },
     {
-      icon: "/icon_globe.svg",
+      icon: "/icons/icon_globe.svg",
       title: "+200 clients across Latin America",
     },
     {
-      icon: "/icon_person.svg",
+      icon: "/icons/icon_person.svg",
       title: "3,000,000 corporate end users",
     },
     {
-      icon: "/icon_object-20.svg",
+      icon: "/icons/icon_object-20.svg",
       title: "+2,000 courses developed",
     },
 ];
 
 export const features = [
     {
-      icon: "/icon_ia.svg",
+      icon: "/icons/icon_ia.svg",
       title: "Artificial Intelligence",
       text: "for adaptive training and effective thinking",
     },
     {
-      icon: "/icon_object-05.svg",
+      icon: "/icons/icon_object-05.svg",
       title: "Didactic content",
       text: "with high interactivity and practical approach",
     },
     {
-      icon: "/icon_object-07.svg",
+      icon: "/icons/icon_object-07.svg",
       title: "Gamification",
       text: "with interactive dynamics and motivating progress",
     },
     {
-      icon: "/icon_object-08.svg",
+      icon: "/icons/icon_object-08.svg",
       title: "Augmented reality",
       text: "and immersive technology in training",
     },
@@ -60,6 +60,7 @@ export const features = [
 
 export const stories = [
     {
+      id: "Liverpool",
       title: "Liverpool: Regulatory courses prepared to take care of what matters",
       description1:
         "Safety is not just a protocol, it is a commitment.",
@@ -67,9 +68,10 @@ export const stories = [
         "CrearMedia developed an accessible and visual training experience, where each Liverpool collaborator learns to act with confidence and responsibility in critical moments.",
       buttonText: "Find out more",
       image: "/story_liverpool.webp",
-      alt: "Liverpool preview",
+      alt: "Liverpool",
     },
     {
+      id: "ADO",
       title: "ADO: Immersive Training for a New Era",
       description1:
         "ADO sought to renew its training strategy and bring it closer to its teams more effectively.",
@@ -79,9 +81,10 @@ export const stories = [
         "Learning that hooks from the first click.",
       buttonText: "Find out more",
       image: "/story_ado.webp",
-      alt: "ADO preview",
+      alt: "ADO",
     },
     {
+      id: "Dollarcity",
       title: "Dollarcity: Clear training for real results",
       description1:
         "Dollarcity needed to train its store teams in key procedures quickly and effectively.",
@@ -91,9 +94,10 @@ export const stories = [
         "A precise, actionable and visually intuitive training solution.",
       buttonText: "Find out more",
       image: "/story_dollarcity.webp",
-      alt: "ADO preview",
+      alt: "Dollarcity",
     },
     {
+      id: "GEPP",
       title: "GEPP: Master the complex with clarity",
       description1:
         "Connecting with a machine is not easy. To train their teams in the use of specialized machinery, GEPP needed more than manuals.",
@@ -103,7 +107,7 @@ export const stories = [
         "Each component is explained with precision, combining animations, real scenarios and interactive guides, allowing collaborators to master the team... with confidence and without complications.",
       buttonText: "Find out more",
       image: "/story_gepp.webp",
-      alt: "ADO preview",
+      alt: "GEPP",
     },
 ];
 
