@@ -31,9 +31,13 @@ export default function BrandMarquee() {
                 advantage
               </p>
             </div>
-            <button className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#5cbb4a] px-8 py-2 text-[18px] font-semibold text-white">
+            <a
+              href="/consulting"
+              className="absolute left-1/2 bottom-0 inline-flex -translate-x-1/2 translate-y-1/2 rounded-full bg-[#5cbb4a] px-8 py-2 text-[18px] font-semibold text-white 
+                transition hover:bg-[#376e2c]"
+            >
               Want to be part? &gt;
-            </button>
+            </a>
           </div>
         </div>
       </section>

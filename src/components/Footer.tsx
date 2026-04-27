@@ -15,8 +15,17 @@ export default function Footer() {
               className="h-auto w-[84px]"
             />
 
-            <div className="mt-8 space-y-2 text-[18px] leading-[1.6] text-white">
-              <p>Email: comercial@crearmedia.com</p>
+            <div className="mt-8 space-y-2 text-[17px] leading-[1.2] text-white">
+              <p>
+                Email:{" "}
+                <a
+                  href="mailto:comercial@crearmedia.com"
+                  className="hover:text-[#376e2c]
+                    hover:opacity-80 hover:underline hover:underline-offset-4"
+                >
+                  comercial@crearmedia.com
+                </a>
+              </p>
               <p>Phone: +52 55-11070674</p>
               <p>Address: Baja California 255 Edificio B Oficina 602.</p>
               <p>Hipódromo Condesa,</p>
@@ -35,8 +44,9 @@ export default function Footer() {
             />
 
             <Link
-              href="#contact"
-              className="mt-8 rounded-full bg-[#5cbb4a] px-12 py-3 text-[18px] font-semibold text-white"
+              href="/consulting"
+              className="mt-8 rounded-full bg-[#5cbb4a] px-12 py-3 text-[18px] font-semibold text-white
+                transition hover:bg-[#376e2c]"
             >
               Contact Us
             </Link>
@@ -50,10 +60,14 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-[16px] text-white">
-              <a href="#" className="hover:opacity-80">LinkedIn</a>
-              <a href="#" className="hover:opacity-80">YouTube</a>
-              <a href="#" className="hover:opacity-80">Instagram</a>
-              <a href="#" className="hover:opacity-80">Facebook</a>
+              <a href="https://www.linkedin.com/in/alejandroperezmolina/" 
+                className="hover:opacity-80" target="_blank">LinkedIn</a>
+              <a href="https://www.youtube.com/channel/UCnghI0JwEmFSKXOwhRHsGvg" 
+                className="hover:opacity-80" target="_blank">YouTube</a>
+              <a href="https://www.instagram.com/crear_media?igsh=MzZraHBtYjJhMWx2" 
+                className="hover:opacity-80" target="_blank">Instagram</a>
+              <a href="https://www.facebook.com/crearmediamx" 
+                className="hover:opacity-80" target="_blank">Facebook</a>
             </div>
           </div>
         </div>
