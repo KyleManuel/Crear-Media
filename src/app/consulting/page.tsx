@@ -6,11 +6,10 @@ export default function RequestConsultingPage() {
       <div className="w-full mx-auto px-40 pt-6 pb-40">
         <div className="mb-10">
           <h1 className="text-[28px] font-bold leading-none text-[#4d4d4d]">
-            Nice to meet you!
+            ¡Un gusto conocerte!
           </h1>
           <p className="mt-6 text-[17px] leading-[1.5] text-[#7a7a7a]">
-            Leave us your message using this form and we will get in touch with
-            you as soon as possible.
+            Déjanos tu mensaje usando este formulario y nos pondremos en contacto contigo lo antes posible.
           </p>
         </div>
 
@@ -32,7 +31,7 @@ export default function RequestConsultingPage() {
                   htmlFor="firstName"
                   className="mb-2 block text-[16px] text-[#7a7a7a]"
                 >
-                  First name <span className="text-[#d9534f]">*</span>
+                  Nombres <span className="text-[#d9534f]">*</span>
                 </label>
                 <input
                   id="firstName"
@@ -48,7 +47,7 @@ export default function RequestConsultingPage() {
                   htmlFor="lastName"
                   className="mb-2 block text-[16px] text-[#7a7a7a]"
                 >
-                  Last name <span className="text-[#d9534f]">*</span>
+                  Apellidos <span className="text-[#d9534f]">*</span>
                 </label>
                 <input
                   id="lastName"
@@ -65,7 +64,7 @@ export default function RequestConsultingPage() {
                 htmlFor="email"
                 className="mb-2 block text-[16px] text-[#7a7a7a]"
               >
-                Email <span className="text-[#d9534f]">*</span>
+                Correo electronico <span className="text-[#d9534f]">*</span>
               </label>
               <input
                 id="email"
@@ -81,7 +80,7 @@ export default function RequestConsultingPage() {
                 htmlFor="phone"
                 className="mb-2 block text-[16px] text-[#7a7a7a]"
               >
-                Contact number <span className="text-[#d9534f]">*</span>
+                Numero de contacto <span className="text-[#d9534f]">*</span>
               </label>
               <input
                 id="phone"
@@ -97,7 +96,7 @@ export default function RequestConsultingPage() {
                 htmlFor="challenge"
                 className="mb-2 block text-[16px] text-[#7a7a7a]"
               >
-                What challenge are you looking to solve?{" "}
+                ¿Que desafío estas buscando resolver?{" "}
                 <span className="text-[#d9534f]">*</span>
               </label>
               <textarea
@@ -113,7 +112,7 @@ export default function RequestConsultingPage() {
               type="submit"
               className="rounded-[8px] bg-[#5cbb4a] px-6 py-2 text-[16px] font-semibold text-white transition hover:opacity-90"
             >
-              Send
+              Enviar
             </button>
           </form>
         </div>

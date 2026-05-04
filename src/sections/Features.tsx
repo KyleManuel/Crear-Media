@@ -1,7 +1,25 @@
 import Image from "next/image";
-import { features } from "@/data/home";
 
-export default function FeaturesSection() {
+type FeaturesSectionProps = {
+  langTxt: {
+    Features_heading: string;
+    Features_paragraphOne: string;
+    Features_paragraphTwo: string;
+  };
+};
+
+type ListFeaturesProps = {
+  features: FeaturesItem[];
+}
+
+type FeaturesItem = {
+  icon: string;
+  title: string;
+  text: string;
+};
+
+
+export default function FeaturesSection({ langTxt }: FeaturesSectionProps) {
     return (
         <section id="services" className="mx-auto max-w-[1100px] py-20">
             <div className="grid items-start gap-6 grid-cols-[0.6fr_1.4fr]">
@@ -16,13 +34,13 @@ export default function FeaturesSection() {
             </div>
             <div>
                 <h2 className="mb-6 text-[48px] font-bold leading-[1.05] text-[#5cbb4a] max-w-[335px]">
-                Our Products and Services
+                {langTxt.Features_heading}
                 </h2>
                 <div className="space-y-8 text-[18px] leading-[1.5] text-[#8a8a8a] max-w-[600px]">
                 <p>
-                    We drive the growth of your company with {" "}
+                    {langTxt.Features_paragraphOne} {" "}
                     <span className="font-semibold text-[#7a7a7a]">
-                    innovative training, immersive experiences and solutions adapted to your industry, through:
+                        {langTxt.Features_paragraphTwo}
                     </span>
                 </p>
                 </div>
@@ -32,7 +50,7 @@ export default function FeaturesSection() {
     )
 }
 
-export function ListFeatures() {
+export function ListFeatures({ features }: ListFeaturesProps) {
     return (
         <section
             className="bg-cover bg-center bg-no-repeat w-full px-6 pb-16"

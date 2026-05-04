@@ -1,7 +1,15 @@
 import Image from "next/image";
-import { stats } from "@/data/home";
 
-export default function StatsSection() {
+type StatItem = {
+  icon: string;
+  title: string;
+};
+
+type StatsSectionProps = {
+  stats: StatItem[];
+};
+
+export default function StatsSection({ stats }: StatsSectionProps) {
     return (
         <section className="bg-[#171717] w-full px-36 py-12">
             <div className="mx-auto max-w-[1400px]">

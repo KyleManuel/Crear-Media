@@ -1,3 +1,4 @@
+import { langTxt, stats, features, stories, testimonials, brands } from "@/data/home";
 
 import HeroVideoSection, { CEOVideo } from "@/sections/HeroVideo";
 import AboutUsSection from "@/sections/AboutUs";
@@ -12,27 +13,27 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
       <main className="flex flex-1 w-full flex-col items-center py-16 bg-white sm:items-start">
-        <HeroVideoSection />
+        <HeroVideoSection langTxt={langTxt} />
 
-        <AboutUsSection />
+        <AboutUsSection langTxt={langTxt} />
 
         <CountrySection />
 
-        <StatsSection />
+        <StatsSection stats={stats} />
 
-        <FeaturesSection />
+        <FeaturesSection langTxt={langTxt} />
 
-        <ListFeatures />
+        <ListFeatures features={features} />
 
-        <StoriesSection />
+        <StoriesSection langTxt={langTxt} />
 
-        <ListStories />
+        <ListStories stories={stories} />
 
-        <TestimonialSection />
+        <TestimonialSection testimonials={testimonials} />
         
-        <BrandMarquee />
+        <BrandMarquee brands={brands} langTxt={langTxt} />
 
-        <CEOVideo />
+        <CEOVideo langTxt={langTxt} />
 
       </main>
     </div>

@@ -1,7 +1,31 @@
 import Image from "next/image";
-import { stories } from "@/data/home";
 
-export default function SuccessStories() {
+type SuccessStoriesProps = {
+  langTxt: {
+    Success_heading: string;
+    Success_paragraphOne: string;
+    Success_paragraphTwo: string;
+    Success_paragraphThree: string;
+    Success_paragraphFour: string;
+  };
+};
+
+type ListStoriesProps = {
+  stories: StoriesItem[];
+}
+
+type StoriesItem = {
+  id: string;
+  title: string;
+  description1: string;
+  description2: string;
+  description3?: string;
+  buttonText: string;
+  image: string;
+  alt: string;
+};
+
+export default function SuccessStories({ langTxt }: SuccessStoriesProps) {
     return (
         <section className="mx-auto max-w-[1100px] py-20">
             <div className="grid items-start gap-6 grid-cols-[0.3fr_1.7fr]">
@@ -16,22 +40,14 @@ export default function SuccessStories() {
             </div>
             <div>
                 <h2 className="mb-6 text-[48px] font-bold leading-[1.05] text-[#5cbb4a] max-w-[550px]">
-                Success stories that inspire and transform
+                { langTxt.Success_heading }
                 </h2>
                 <div className="space-y-8 text-[18px] leading-[1.25] text-[#8a8a8a] max-w-[550px]">
-                <p>
-                    Explore how companies like yours have overcome challenges,
-                    boosted its growth and achieved its objectives with
-                    innovative learning strategies.
-                </p>
-                <p>
-                    Discover real stories of organizations that have enhanced their
-                    talent, optimized processes and generated a measurable impact
-                    thanks to tailor-made solutions.
-                </p>
-                <p>Your company can also be the next success story.</p>
+                <p>{ langTxt.Success_paragraphOne }</p>
+                <p>{ langTxt.Success_paragraphTwo }</p>
+                <p>{ langTxt.Success_paragraphThree }</p>
                 <p className="font-semibold text-[#7a7a7a]">
-                    Ready to transform learning into a growth engine?
+                    { langTxt.Success_paragraphFour }
                 </p>
                 </div>
             </div>
@@ -40,7 +56,7 @@ export default function SuccessStories() {
     )
 }
 
-export function ListStories() {
+export function ListStories({ stories }: ListStoriesProps) {
     return (
         <section id="stories" className="w-full pl-60 pr-50 py-16">
             <div className="mx-auto max-w-[1180px]">

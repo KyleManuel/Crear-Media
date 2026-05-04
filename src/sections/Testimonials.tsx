@@ -1,7 +1,17 @@
 import Image from "next/image";
-import { testimonials } from "@/data/home";
 
-export default function TestimonialSection() {
+type TestimonialSectionProps = {
+  testimonials: TestimonialItem[][];
+};
+
+type TestimonialItem = {
+  quote: string;
+  author: string;
+  role: string;
+  logo: string;
+};
+
+export default function TestimonialSection({ testimonials }: TestimonialSectionProps) {
     return (
         <section className="w-full px-50 py-16">
           <div className="mx-auto space-y-10">

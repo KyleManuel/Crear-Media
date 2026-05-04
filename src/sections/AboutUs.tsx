@@ -1,6 +1,17 @@
 import Image from "next/image";
 
-export default function AboutUsSection() {
+type AboutUsProps = {
+  langTxt: {
+    AboutUs_heading: string;
+    AboutUs_subHeading: string;
+    AboutUs_paragraphOne: string;
+    AboutUs_paragraphTwo: string;
+    AboutUs_paragraphThree: string;
+    AboutUs_paragraphFour: string;
+  };
+};
+
+export default function AboutUsSection({ langTxt }: AboutUsProps) {
     return (
         <section id="about" className="grid items-center gap-12 mx-42 px-16 py-10 lg:grid-cols-[0.9fr_1.1fr] rounded-[32px] border border-[#e8e8e8] bg-white shadow-[0_0_10px_5px_rgb(103_103_103_/_0.52)]">
             <div className="flex justify-center">
@@ -17,7 +28,7 @@ export default function AboutUsSection() {
             <div className="max-w-[720px]">
             <p className="mb-8">
                 <span className="inline-flex items-center gap-2 text-[28px] font-semibold text-[#4a4a4a]">
-                We Are
+                { langTxt.AboutUs_heading }
                 <span className="text-[#5cbb4a]">CrearMedia</span>
                 <Image
                     src="/icons/green-star.svg"
@@ -30,31 +41,14 @@ export default function AboutUsSection() {
             </p>
 
             <h2 className="mb-6 text-[23px] font-light leading-tight text-[#4d4d4d]">
-                We design intelligent learning experiences
+                { langTxt.AboutUs_subHeading }
             </h2>
 
             <div className="space-y-2 text-[17px] leading-8 text-[#808080]">
-                <p>
-                At CrearMedia, we believe learning should feel like a living
-                experience that flows, connects, and transforms.
-                </p>
-
-                <p>
-                We deeply understand the challenges of each organization, and
-                from there we build unique solutions centered on the user and
-                designed to be applied, not just understood.
-                </p>
-
-                <p>
-                We combine strategy, technology, storytelling, and instructional
-                design to create experiences that feel natural, useful, and
-                memorable.
-                </p>
-
-                <p>
-                We are strategic partners at every stage of the process. We
-                think alongside you. We design with intention.
-                </p>
+                <p> { langTxt.AboutUs_paragraphOne } </p>
+                <p> { langTxt.AboutUs_paragraphTwo } </p>
+                <p> { langTxt.AboutUs_paragraphThree } </p>
+                <p> { langTxt.AboutUs_paragraphFour } </p>
             </div>
             </div>
         </section>

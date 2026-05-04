@@ -1,7 +1,17 @@
 import Image from "next/image";
-import { brands } from "@/data/home";
 
-export default function BrandMarquee() {
+type BrandMarqueeProps = {
+  brands: string[];
+  langTxt: {
+    Marquees_heading: string;
+    Marquees_btnTxt: string;
+  };
+};
+
+export default function BrandMarquee({
+  brands,
+  langTxt,
+}: BrandMarqueeProps) {
   return (
       <section className="w-full py-17
         relative overflow-hidden bg-cover bg-center bg-no-repeat"
@@ -27,8 +37,7 @@ export default function BrandMarquee() {
 
             <div className="flex flex-col items-center text-center">
               <p className="max-w-[700px] text-[20px] font-semibold leading-[1.5] text-[#7a7a7a]">
-                These brands have already transformed learning into a competitive
-                advantage
+                { langTxt.Marquees_heading }
               </p>
             </div>
             <a
@@ -36,7 +45,7 @@ export default function BrandMarquee() {
               className="absolute left-1/2 bottom-0 inline-flex -translate-x-1/2 translate-y-1/2 rounded-full bg-[#5cbb4a] px-8 py-2 text-[18px] font-semibold text-white 
                 transition hover:bg-[#376e2c]"
             >
-              Want to be part? &gt;
+              { langTxt.Marquees_btnTxt }{" "}&gt;
             </a>
           </div>
         </div>

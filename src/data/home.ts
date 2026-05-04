@@ -1,3 +1,40 @@
+export const langTxt = {
+    HeroVideo_vidTag: "Tu navegador no admite la reproducción de este video.",
+    HeroVideo_btnTxt: "HAZ CLIC Y PRUÉBALO",
+
+
+    AboutUs_heading: "Somos",
+    AboutUs_subHeading: "Diseñamos experiencias de aprendizaje inteligentes",
+    AboutUs_paragraphOne: `En CrearMedia, creemos que el aprendizaje debe sentirse como una experiencia viva: que fluya, conecte y transforme.`,
+    AboutUs_paragraphTwo: `Comprendemos a fondo los desafíos de cada organización, y desde ahí construimos soluciones únicas, centradas en el usuario, pensadas para aplicarse, no solo entenderse.`,
+    AboutUs_paragraphThree: `Combinamos estrategia, tecnología, narrativa y diseño instruccional para crear experiencias que se sienten naturales, útiles y memorables.`,
+    AboutUs_paragraphFour: `Somos aliados estratégicos en cada etapa del proceso. Pensamos a tu lado. Diseñamos con intención.`,
+
+
+    Features_heading: "Nuestros productos y servicios",
+    Features_paragraphOne: "Impulsamos el crecimiento de tu empresa con ",
+    Features_paragraphTwo: "formación innovadora, experiencias inmersivas y soluciones adaptadas a tu industria, por medio de:",
+    
+
+    Success_heading: "Casos de éxito que inspiran y transforman",
+    Success_paragraphOne: `Explora cómo empresas como la tuya han superado desafíos,
+      impulsado su crecimiento y alcanzado sus objetivos con
+      estrategias de aprendizaje innovadoras.`,
+    Success_paragraphTwo: `Descubre historias reales de organizaciones que han potenciado 
+      su talento, optimizado procesos y generado un impacto medible 
+      gracias a soluciones diseñadas a su medida.`,
+    Success_paragraphThree: "Tu empresa también puede ser la próxima historia de éxito.",
+    Success_paragraphFour: "¿Listo para transformar el aprendizaje en un motor de crecimiento?",
+
+
+    Marquees_heading: "Estas marcas ya transformaron el aprendizaje en una ventaja competitiva",
+    Marquees_btnTxt: "¿Quieres ser parte?",
+
+
+    CEOVideo_title: "Aprender no es memorizar.",
+    CEOVideo_subtitle: "Es sentir, conectar, transformar.",
+}
+
 export const countries = [
     {
       title: "Mexico",
@@ -19,93 +56,93 @@ export const countries = [
 export const stats = [
     {
       icon: "/icons/icon_object-17.svg",
-      title: "25 years of experience",
+      title: "25 años de experiencia",
     },
     {
       icon: "/icons/icon_globe.svg",
-      title: "+200 clients across Latin America",
+      title: "+200 clientes en latinoamérica",
     },
     {
       icon: "/icons/icon_person.svg",
-      title: "3,000,000 corporate end users",
+      title: "3´000.000 usuarios finales corporativos",
     },
     {
       icon: "/icons/icon_object-20.svg",
-      title: "+2,000 courses developed",
+      title: "+2.000 cursos desarrollados",
     },
 ];
 
 export const features = [
     {
       icon: "/icons/icon_ia.svg",
-      title: "Artificial Intelligence",
-      text: "for adaptive training and effective thinking",
+      title: "Inteligencia Artificial",
+      text: "para formación adaptativa y pensamiento efectivo",
     },
     {
       icon: "/icons/icon_object-05.svg",
-      title: "Didactic content",
-      text: "with high interactivity and practical approach",
+      title: "Contenidos didácticos",
+      text: "con alta interactividad y enfoque práctico",
     },
     {
       icon: "/icons/icon_object-07.svg",
-      title: "Gamification",
-      text: "with interactive dynamics and motivating progress",
+      title: "Gamificación",
+      text: "con dinámicas interactivas y progreso motivador",
     },
     {
       icon: "/icons/icon_object-08.svg",
-      title: "Augmented reality",
-      text: "and immersive technology in training",
+      title: "Realidad aumentada",
+      text: "y tecnologia inmersiva en formacion",
     },
 ];
 
 export const stories = [
     {
       id: "Liverpool",
-      title: "Liverpool: Regulatory courses prepared to take care of what matters",
+      title: "Liverpool: cursos normativos: Preparados para cuidar lo que importa",
       description1:
-        "Safety is not just a protocol, it is a commitment.",
+        "La seguridad no es solo un protocolo, es un compromiso.",
       description2:
-        "CrearMedia developed an accessible and visual training experience, where each Liverpool collaborator learns to act with confidence and responsibility in critical moments.",
-      buttonText: "Find out more",
+        "CrearMedia desarrolló una experiencia de capacitación accesible y visual, donde cada colaborador de Liverpool aprende a actuar con confianza y responsabilidad en momentos críticos.",
+      buttonText: "Saber más",
       image: "/story_liverpool.webp",
       alt: "Liverpool",
     },
     {
       id: "ADO",
-      title: "ADO: Immersive Training for a New Era",
+      title: "ADO: Capacitación inmersiva para una nueva era",
       description1:
-        "ADO sought to renew its training strategy and bring it closer to its teams more effectively.",
+        "ADO buscaba renovar su estrategia formativa y acercarla a sus equipos de forma más efectiva.",
       description2:
-        "With augmented reality technology and instructional design, the learning experience became more dynamic, practical, and memorable.",
+        "Con tecnología de realidad aumentada y diseño instruccional centrado en la experiencia, CrearMedia desarrolló una solución práctica, visual y memorable.",
       description3:
-        "Learning that hooks from the first click.",
-      buttonText: "Find out more",
+        "Aprendizaje que engancha desde el primer clic.",
+      buttonText: "Saber más",
       image: "/story_ado.webp",
       alt: "ADO",
     },
     {
       id: "Dollarcity",
-      title: "Dollarcity: Clear training for real results",
+      title: "Dollarcity: Capacitación clara para resultados reales",
       description1:
-        "Dollarcity needed to train its store teams in key procedures quickly and effectively.",
+        "Dollarcity necesitaba capacitar a sus equipos de tienda en procedimientos clave de forma rápida y efectiva.",
       description2:
-        "CrearMedia developed an interactive course with clear visual language, sequential steps and real examples that connect directly with the daily life of the collaborator.",
+        "CrearMedia desarrolló un curso interactivo con lenguaje visual claro, pasos secuenciales y ejemplos reales que conectan directamente con el día a día del colaborador.",
       description3:
-        "A precise, actionable and visually intuitive training solution.",
-      buttonText: "Find out more",
+        "Una solución formativa precisa, accionable y visualmente intuitiva.",
+      buttonText: "Saber más",
       image: "/story_dollarcity.webp",
       alt: "Dollarcity",
     },
     {
       id: "GEPP",
-      title: "GEPP: Master the complex with clarity",
+      title: "GEPP: Domina lo complejo con claridad",
       description1:
-        "Connecting with a machine is not easy. To train their teams in the use of specialized machinery, GEPP needed more than manuals.",
+        "Conectar con una máquina no es fácil. Para capacitar a sus equipos en el uso de maquinaria especializada, GEPP necesitaba más que manuales.",
       description2:
-        "CrearMedia designed a visual, animated and human experience that turns a technical process into a clear, accessible and engaging narrative.",
+        "CrearMedia diseñó una experiencia visual, animada y humana que convierte un proceso técnico en una narrativa clara, accesible y atractiva.",
       description3:
-        "Each component is explained with precision, combining animations, real scenarios and interactive guides, allowing collaborators to master the team... with confidence and without complications.",
-      buttonText: "Find out more",
+        "Cada componente se explica con precisión, combinando animaciones, escenarios reales y guías interactivas, permitiendo a los colaboradores dominar el equipo… con confianza y sin complicaciones.",
+      buttonText: "Saber más",
       image: "/story_gepp.webp",
       alt: "GEPP",
     },
@@ -113,39 +150,39 @@ export const stories = [
 
 const testimonialsList = [
     {
-      quote: "CrearMedia was key to transforming our training processes: they designed simple interactive courses aligned with our reality. They accompanied us at all times, understanding what we needed without imposing solutions, but creating with us from closeness and strategy.",
-      author: "Marta Lopez",
+      quote: "CrearMedia fue clave para transformar nuestros procesos de formación: diseñaron cursos interactivos simples y alineados con nuestra realidad. Nos acompañaron en todo momento, entendiendo lo que necesitábamos sin imponer soluciones, sino creando con nosotros desde la cercanía y la estrategia.",
+      author: "Marta López",
       role: "Learning Manager",
       logo: "logos/logo_dollarcity.svg",
     },
     {
-      quote: "At Mobility ADO we had the challenge of transmitting our values to operational profiles that are difficult to achieve in person. CrearMedia designed an augmented reality training strategy with great acceptance and outstanding results: more than 6,000 employees participate with a profit of more than 90%. They have been a key and committed partner throughout the process.",
+      quote: "En Mobility ADO teníamos el reto de transmitir nuestros valores a perfiles operativos difíciles de alcanzar presencialmente. CrearMedia diseñó una estrategia de formación en realidad aumentada con gran aceptación y resultados sobresalientes: más de 6,000 colaboradores participan con un aprovechamiento superior al 90%. Han sido un socio clave y comprometido en todo el proceso.",
       author: "Veronica Delgadillo",
-      role: "Content Head",
+      role: "Jefa de contenidos",
       logo: "logos/logo_ado.svg",
     },
     {
-      quote: "CrearMedia understood our training methodology and transformed it into key instructional videos for trainers. His team integrated with us, providing creativity and technical experience. The results have been so positive that we presented the project to management and the Tec de Monterrey. Today they are strategic allies to strengthen our training.",
-      author: "Jesus Martinez",
-      role: "Human Talent",
+      quote: "CrearMedia entendió nuestra metodología de capacitación y la transformó en videos didácticos clave para entrenadores. Su equipo se integró con nosotros, aportando creatividad y experiencia técnica. Los resultados han sido tan positivos que presentamos el proyecto ante dirección y el Tec de Monterrey. Hoy son aliados estratégicos para fortalecer nuestra formación.",
+      author: "Jesús Martínez",
+      role: "Talento Humano",
       logo: "logos/logo_gepp.svg",
     },
     {
-      quote: "Working with CrearMedia has been invaluable. We developed an international reference educational model to empower entrepreneurs and close digital gaps. As a coordinator with 18 years of experience, I highlight her commitment, quality and superior results than expected. If you are looking for a real change, I recommend them 100%.",
+      quote: "Trabajar con CrearMedia ha sido invaluable. Desarrollamos un modelo educativo referente internacional para empoderar emprendedoras y cerrar brechas digitales. Como coordinadora con 18 años de experiencia, destaco su compromiso, calidad y resultados superiores a lo esperado. Si buscas un cambio real, los recomiendo 100%.",
       author: "Eliana Silvero",
-      role: "Digital Entrepreneurship Coordinator",
+      role: "Coordinadora de emprendimiento digital",
       logo: "logos/logo_adopem.svg",
     },
     {
-      quote: "Thanks to CrearMedia we digitized and scaled our business impact methodology. We went from 457 to more than 6,000 companies served throughout the country, with an accessible, powerful solution with a vision of growth without borders.",
+      quote: "Gracias a CrearMedia digitalizamos y escalamos nuestra metodología de impacto empresarial. Pasamos de 457 a más de 6.000 empresas atendidas en todo el país, con una solución accesible, potente y con visión de crecimiento sin fronteras.",
       author: "Jhon Fonseca",
-      role: "Content Virtualization Leader",
+      role: "Líder de virtualización de contenidos",
       logo: "logos/logo_camara-bogota.svg",
     },
     {
-      quote: "Alejandro's team stands out for its innovation, agility and focus on results. They design learning experiences that really develop skills, adapting to the context of each client with excellence and commitment.",
+      quote: "El equipo de Alejandro destaca por su innovación, agilidad y enfoque en resultados. Diseñan experiencias de aprendizaje que realmente desarrollan competencias, adaptándose al contexto de cada cliente con excelencia y compromiso.",
       author: "Ximena Duarte",
-      role: "Human Talent",
+      role: "Talento Humano",
       logo: "logos/logo_camara-cali.svg",
     },
 ];

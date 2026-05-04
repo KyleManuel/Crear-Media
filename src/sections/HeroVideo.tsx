@@ -1,29 +1,38 @@
-export default function HeroVideoSection() {
+type HeroVideoSectionProps = {
+  langTxt: {
+    HeroVideo_vidTag: string;
+    HeroVideo_btnTxt: string;
+    CEOVideo_title: string;
+    CEOVideo_subtitle: string;
+  };
+};
+
+export default function HeroVideoSection({ langTxt }: HeroVideoSectionProps) {
   return (
       <section className="px-32">
         <video controls>
           <source src="/videos/video_crear-media.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          { langTxt.HeroVideo_vidTag }
         </video>
         <div className="flex w-full justify-center py-8">
             <button className="rounded-[20px] bg-[#5cbb4a] px-5 py-2 text-lg font-medium uppercase tracking-wide text-white transition hover:opacity-90">
-            Click and Try It
+              { langTxt.HeroVideo_btnTxt }
             </button>
         </div>
       </section>
   )
 }
 
-export function CEOVideo() {
+export function CEOVideo({ langTxt }: HeroVideoSectionProps) {
   return (
       <section className="w-full px-32 py-16">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-8 text-center">
             <h2 className="text-[28px] font-bold leading-[1.2] text-[#4d4d4d]">
-              Learning is not memorizing.
+              { langTxt.CEOVideo_title }
             </h2>
             <h2 className="text-[28px] font-bold leading-[1.2] text-[#4d4d4d]">
-              It is feeling, connecting, transforming.
+              { langTxt.CEOVideo_subtitle }
             </h2>
           </div>
 
