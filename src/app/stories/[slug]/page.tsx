@@ -5,6 +5,16 @@ import StoriesChallenges from "@/components/stories/Challenges";
 import StoriesFooter from "@/components/stories/Footer";
 import { stories } from "@/data/stories";
 
+export function generateStaticParams() {
+
+  return stories.map((story) => ({
+
+    slug: story.id,
+
+  }));
+
+}
+
 export async function generateMetadata({
   params,
 }: {
