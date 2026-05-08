@@ -1,7 +1,40 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const footerContent = {
+  es: {
+    emailLabel: "Email:",
+    phoneLabel: "Telefono:",
+    addressLabel: "Direccion:",
+    addressLine1: "Baja California 255 Edificio B Oficina 602.",
+    addressLine2: "Hipódromo Condesa,",
+    addressLine3: "Ciudad de México. C.P.",
+    addressLine4: "06140",
+    buttonText: "Contáctanos",
+    copyright: "© 2026 CrearMedia. Todos los derechos reservados",
+  },
+  en: {
+    emailLabel: "Email:",
+    phoneLabel: "Phone:",
+    addressLabel: "Address:",
+    addressLine1: "Baja California 255 Edificio B Oficina 602.",
+    addressLine2: "Hipódromo Condesa,",
+    addressLine3: "Mexico City, C.P.",
+    addressLine4: "06140",
+    buttonText: "Contact Us",
+    copyright: "© 2026 CrearMedia. All Rights Reserved",
+  },
+};
 
 export default function Footer() {
+  const pathname = usePathname() || "/";
+  const lang = pathname === "/en" || pathname.startsWith("/en/") ? "en" : "es";
+  const txt = footerContent[lang];
+  const consultingHref = lang === "en" ? "/en/consulting" : "/consulting";
+
   return (
     <footer className="bg-[#171717] text-white">
       <div className="mx-auto max-w-[1800px] px-6 pt-8 pb-6">
@@ -17,20 +50,19 @@ export default function Footer() {
 
             <div className="mt-8 space-y-2 text-[17px] leading-[1.2] text-white">
               <p>
-                Email:{" "}
+                {txt.emailLabel}{" "}
                 <a
                   href="mailto:comercial@crearmedia.com"
-                  className="hover:text-[#376e2c]
-                    hover:opacity-80 hover:underline hover:underline-offset-4"
+                  className="hover:text-[#376e2c] hover:opacity-80 hover:underline hover:underline-offset-4"
                 >
                   comercial@crearmedia.com
                 </a>
               </p>
-              <p>Phone: +52 55-11070674</p>
-              <p>Address: Baja California 255 Edificio B Oficina 602.</p>
-              <p>Hipódromo Condesa,</p>
-              <p>Mexico City, C.P.</p>
-              <p>06140</p>
+              <p>{txt.phoneLabel} +52 55-11070674</p>
+              <p>{txt.addressLabel} {txt.addressLine1}</p>
+              <p>{txt.addressLine2}</p>
+              <p>{txt.addressLine3}</p>
+              <p>{txt.addressLine4}</p>
             </div>
           </div>
 
@@ -44,30 +76,52 @@ export default function Footer() {
             />
 
             <Link
-              href="/consulting"
-              className="mt-8 rounded-full bg-[#5cbb4a] px-12 py-3 text-[18px] font-semibold text-white
-                transition hover:bg-[#376e2c]"
+              href={consultingHref}
+              className="mt-8 rounded-full bg-[#5cbb4a] px-12 py-3 text-[18px] font-semibold text-white transition hover:bg-[#376e2c]"
             >
-              Contact Us
+              {txt.buttonText}
             </Link>
           </div>
         </div>
 
         <div className="mt-8 border-t border-white pt-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-[16px] text-white">
-              © 2026 CrearMedia. All Rights Reserved
+            <p className='[font-family:"agenda-medium",helvetica,arial,sans-serif]
+              text-[17px] leading-[1.6] text-white'>{txt.copyright}
             </p>
-
             <div className="flex flex-wrap items-center gap-6 text-[16px] text-white">
-              <a href="https://www.linkedin.com/in/alejandroperezmolina/" 
-                className="hover:opacity-80" target="_blank">LinkedIn</a>
-              <a href="https://www.youtube.com/channel/UCnghI0JwEmFSKXOwhRHsGvg" 
-                className="hover:opacity-80" target="_blank">YouTube</a>
-              <a href="https://www.instagram.com/crear_media?igsh=MzZraHBtYjJhMWx2" 
-                className="hover:opacity-80" target="_blank">Instagram</a>
-              <a href="https://www.facebook.com/crearmediamx" 
-                className="hover:opacity-80" target="_blank">Facebook</a>
+              <a
+                href="https://www.linkedin.com/in/alejandroperezmolina/"
+                className="hover:opacity-80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCnghI0JwEmFSKXOwhRHsGvg"
+                className="hover:opacity-80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>
+              <a
+                href="https://www.instagram.com/crear_media?igsh=MzZraHBtYjJhMWx2"
+                className="hover:opacity-80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/crearmediamx"
+                className="hover:opacity-80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
             </div>
           </div>
         </div>

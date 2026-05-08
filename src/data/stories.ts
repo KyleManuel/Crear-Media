@@ -2,7 +2,7 @@ export const stories = [
     {
       id: "Liverpool",
       title: "Liverpool: Seguridad que se vive, no solo se enseña",
-      video: "/videos/video_success-Liverpool.mp4",
+      video: "/videos/video_success-liverpool.mp4",
       hero: [
         {
           description: "En Liverpool, la seguridad de sus colaboradores y clientes es una prioridad.",
@@ -58,7 +58,7 @@ export const stories = [
     {
       id: "ADO",
       title: "ADO: Capacitación inmersiva para una nueva era",
-      video: "/videos/video_success-ADO.mp4",
+      video: "/videos/video_success-ado.mp4",
       hero: [
         {
           description: "En un entorno empresarial donde la rapidez y la conexión emocional son esenciales, ADO decidió transformar su modelo tradicional de formación."
@@ -175,7 +175,7 @@ export const stories = [
     {
       id: "GEPP",
       title: "GEPP: Technical training that promotes the industrial operation",
-      video: "/videos/video_success-GEPP.mp4",
+      video: "/videos/video_success-gepp.mp4",
       hero: [
         { 
           description:

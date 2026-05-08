@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type HeroVideoSectionProps = {
   langTxt: {
@@ -10,6 +13,11 @@ type HeroVideoSectionProps = {
 };
 
 export default function HeroVideoSection({ langTxt }: HeroVideoSectionProps) {
+
+  const pathname = usePathname();
+  const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
+  const aiHref = isEnglish ? "/ai" : "/ia";
+
   return (
       <section className="px-32">
         <video controls>
@@ -18,11 +26,10 @@ export default function HeroVideoSection({ langTxt }: HeroVideoSectionProps) {
         </video>
         <div className="flex w-full justify-center py-8">
           <Link
-            href="/consulting"
+            href={ aiHref }
             className="rounded-[20px] bg-[#5cbb4a] px-5 py-2 text-lg font-medium uppercase tracking-wide text-white transition hover:opacity-90"
           >
             {langTxt.HeroVideo_btnTxt}
-
           </Link>
         </div>
       </section>
