@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type HeroVideoSectionProps = {
   langTxt: {
     HeroVideo_vidTag: string;
@@ -15,9 +17,13 @@ export default function HeroVideoSection({ langTxt }: HeroVideoSectionProps) {
           { langTxt.HeroVideo_vidTag }
         </video>
         <div className="flex w-full justify-center py-8">
-            <button className="rounded-[20px] bg-[#5cbb4a] px-5 py-2 text-lg font-medium uppercase tracking-wide text-white transition hover:opacity-90">
-              { langTxt.HeroVideo_btnTxt }
-            </button>
+          <Link
+            href="/consulting"
+            className="rounded-[20px] bg-[#5cbb4a] px-5 py-2 text-lg font-medium uppercase tracking-wide text-white transition hover:opacity-90"
+          >
+            {langTxt.HeroVideo_btnTxt}
+
+          </Link>
         </div>
       </section>
   )
