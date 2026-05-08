@@ -27,7 +27,7 @@ export default function Home() {
 
         <StoriesSection langTxt={langTxt} />
 
-        <ListStories stories={stories} />
+        <ListStories stories={stories} en={true} />
 
         <TestimonialSection testimonials={testimonials} />
         

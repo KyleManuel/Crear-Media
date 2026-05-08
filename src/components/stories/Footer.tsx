@@ -8,9 +8,10 @@ type FooterProps = {
   heading: string;
   footer: FooterItem[];
   button: string;
+  en?: boolean
 };
 
-export default function StoriesFooter({ heading, footer, button }: FooterProps ) {
+export default function StoriesFooter({ heading, footer, button, en }: FooterProps ) {
   return (
     <section className="mx-auto px-20 py-16">
         <div className="mx-auto border-y border-[#8a8a8a] px-12 py-16">
@@ -47,7 +48,7 @@ export default function StoriesFooter({ heading, footer, button }: FooterProps )
 
                 <div className="flex justify-start lg:justify-end">
                     <a
-                    href="#contact"
+                    href={ en == true ? "/en/consulting" : "/consulting" }
                     className="rounded-full bg-[#5cbb4a] px-10 py-4 text-[18px] font-semibold text-white"
                     >
                     { button }

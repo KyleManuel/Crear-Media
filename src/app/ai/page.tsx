@@ -16,19 +16,18 @@ export default function RequestConsultingPage() {
                 className="h-auto w-[64px]"
             />
           <h1 className="text-[32px] font-bold leading-[1.15] text-[#4d4d4d]">
-            Una unión para transformar el aprendizaje con inteligencia
+            A partnership to transform learning with intelligence
           </h1>
 
           <div className="mt-6 space-y-6 text-[17px] leading-[1.5] text-[#808080]">
             <p><strong>
-                En un mundo donde la información ya no basta, la inteligencia se vuelve el recurso más valioso.
+                In a world where information is no longer enough, intelligence becomes the most valuable resource.
             </strong></p>
             <p>
-                CrearMedia y SceneSnap se han unido para impulsar una nueva era de aprendizaje: predictivo, dinámico y profundamente humano. 
-                SceneSnap, una inteligencia artificial desarrollada para entender y optimizar el comportamiento de aprendizaje, se integra ahora de forma exclusiva en los sistemas de formación que desarrollamos para empresas líderes.
+                CrearMedia and SceneSnap have joined forces to usher in a new era of learning: predictive, dynamic, and deeply human. SceneSnap, an artificial intelligence developed to understand and optimize learning behavior, is now exclusively integrated into the training systems we develop for leading companies.
             </p>
             <p><strong>
-                Porque cuando el conocimiento se vuelve consciente de sí mismo, el cambio ya no es posible: es inevitable.
+                Because when knowledge becomes conscious of itself, change is no longer possible: it is inevitable.
             </strong></p>
           </div>
         </div>
@@ -47,11 +46,11 @@ export default function RequestConsultingPage() {
         </div>
         <div className="flex justify-center">
             <Link
-                href="/consulting"
+                href="/en/consulting"
                 className="mt-8 mx-auto inline-block rounded-full bg-[#5cbb4a] px-12 py-3 text-[18px] font-semibold text-white
                 transition hover:bg-[#376e2c]"
             >
-                Probar SceneSnap en acción
+                Try SceneSnap in action
             </Link>
         </div>
         </div>
@@ -62,7 +61,7 @@ export default function RequestConsultingPage() {
         <div className="mx-auto grid max-w-[1800px] font-heading items-start gap-6 lg:grid-cols-[0.87fr_1.13fr]">
             <div className="rounded-tr-[90px] bg-[#f3f3f3] px-20 py-16">
                 <div className="mb-10 flex">
-                    <h1 className="text-[56px] leading-none font-semibold text-black">IA</h1>
+                    <h1 className="text-[56px] leading-none font-semibold text-black">AI</h1>
                     <Image
                         src="/icons/green-star.svg"
                         alt=""
@@ -73,12 +72,7 @@ export default function RequestConsultingPage() {
                 </div>
 
                 <p className="max-w-[760px] text-[18px] font-semibold leading-[1.45] text-[#7a7a7a]">
-                    “SceneSnap combina inteligencia artificial, aprendizaje inmersivo y
-                    personalización para ofrecer experiencias adaptativas. Al integrar
-                    herramientas de IA, analítica de datos y un sistema de gestión del
-                    aprendizaje, crea entornos inclusivos centrados en el aprendizaje
-                    significativo, alineados con las tendencias actuales de educación
-                    multimodal y modelos más flexibles y adaptativos.”
+                    “SceneSnap combines artificial intelligence, immersive learning, and personalization to deliver adaptive experiences. By integrating AI tools, data analytics, and a learning management system, it creates inclusive environments focused on meaningful learning, aligned with current trends in multimodal education and more flexible and adaptive models.”
                 </p>
 
                 <div className="mt-12 flex items-center gap-6">
@@ -95,9 +89,9 @@ export default function RequestConsultingPage() {
                         Alejandro Perez
                     </p>
                     <p className="mt-2 text-[17px] leading-[1.35] text-[#8a8a8a]">
-                        Fundador &amp; Director
+                        Founder &amp; Director
                         <br />
-                        de CrearMedia
+                        of CrearMedia
                     </p>
                     </div>
                 </div>
@@ -108,7 +102,7 @@ export default function RequestConsultingPage() {
                     rel="noopener noreferrer"
                     className="mt-4 inline-flex rounded-[14px] bg-[#5cbb4a] px-4 py-1.5 text-sm font-semibold text-white transition hover:bg-[#376e2c]"
                 >
-                    Ver perfil en LinkedIn
+                    View profile on LinkedIn
                 </Link>
             </div>
 
@@ -124,31 +118,24 @@ export default function RequestConsultingPage() {
                 </div>
 
                 <h2 className="text-5xl font-bold leading-[1.5] text-[#161616]">
-                    ¿Qué es SceneSnap?
+                    What is SceneSnap?
                 </h2>
 
                 <p className="text-[18px] leading-[1.5] text-[#808080]">
-                    <strong>Inteligencia que aprende del aprendizaje</strong>
+                    <strong>Intelligence that learns from learning</strong>
                 </p>
 
                 <div className="space-y-5 text-[17px] leading-[1.6] text-[#808080]">
                     <p>
-                    SceneSnap es una plataforma de inteligencia artificial integrada en
-                    proyectos de formación avanzada. A través de análisis en tiempo real,
-                    identifica patrones, bloqueos y oportunidades únicas para mejorar la
-                    experiencia de cada usuario.
+                    SceneSnap is an artificial intelligence platform integrated into advanced training projects. Through real-time analysis, it identifies patterns, bottlenecks, and unique opportunities to improve each user&apos;s experience.
                     </p>
 
                     <p>
-                    No se limita a mostrar métricas: interpreta la experiencia, predice
-                    comportamientos, y sugiere mejoras precisas sin intervención manual.
+                    It does not just display metrics: it interprets the experience, predicts behaviors, and suggests precise improvements without manual intervention.
                     </p>
 
                     <p>
-                    Esta tecnología convierte cada curso en un sistema vivo que evoluciona
-                    con sus usuarios. Gracias a nuestra colaboración con SceneSnap, somos
-                    pioneros en ofrecer este nivel de personalización y optimización en
-                    América Latina y el resto del continente.
+                    This technology turns each course into a living system that evolves with its users. Thanks to our collaboration with SceneSnap, we are pioneers in offering this level of personalization and optimization in Latin America and across the rest of the continent.
                     </p>
                 </div>
             </div>
@@ -159,54 +146,49 @@ export default function RequestConsultingPage() {
         <div className="mx-auto grid max-w-[2000px] gap-16 bg-[#363636] px-40 py-16 text-white lg:grid-cols-[1fr_0.95fr]">
             <div className="max-w-[760px]">
             <h2 className="text-[20px] font-bold leading-[1.15]">
-                Diseñamos sistemas que se ajustan a cada mente
+                We design systems that fit each mind
             </h2>
 
             <div className="mt-12 space-y-5 text-[16px] leading-[1.75] text-white/95">
                 <p>
-                La mayoría de los sistemas de formación parten de un esquema estándar:
-                mismo contenido, mismo ritmo, mismas rutas,{" "}
-                <strong>en CrearMedia pensamos distinto</strong>
+                Most training systems follow a standard scheme: same content, same pace, same routes;{" "}
+                <strong>at CrearMedia we think differently</strong>
                 </p>
 
                 <p>
-                Gracias a la inteligencia adaptativa de SceneSnap, nuestros cursos se
-                moldean en tiempo real a la experiencia y necesidades del usuario.
+                Thanks to SceneSnap&apos;s adaptive intelligence, our courses are molded in real time to the user&apos;s experience and needs.
                 </p>
 
                 <p>
-                Cada interacción con el contenido genera información que alimenta la IA
-                y transforma la ruta de aprendizaje. Así, nadie queda rezagado. Nadie
-                pierde tiempo con lo que ya domina.
+                Every interaction with the content generates information that feeds the AI ​​and transforms the learning path. This way, no one gets left behind. No one wastes time on what they already know.
                 </p>
 
                 <p>
-                Esto no es personalización superficial. Es una arquitectura cognitiva
-                que reacciona al comportamiento real, no a perfiles genéricos.
+                This isn&apos;t superficial personalization. It&apos;s a cognitive architecture that reacts to actual behavior, not generic profiles.
                 </p>
             </div>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start">
             <h3 className="max-w-[720px] text-3xl font-bold leading-[1.08] text-white">
-                CrearMedia no hace cursos. Diseña sistemas de aprendizaje con inteligencia viva.
+                CrearMedia doesn&apos;t create courses. It designs learning systems with live intelligence.
             </h3>
             </div>
         </div>
     </section>
     <section className="bg-white">
     <StoriesFooter
-        heading="¿Estás listo para transformar tu forma de enseñar?"
+        heading="Are you ready to transform the way you teach?"
         footer={[
             {
             description:
-                "Descubre cómo una inteligencia artificial puede cambiar radicalmente la manera en que tu equipo aprende, crece y se conecta con el conocimiento.",
+                "Discover how artificial intelligence can radically change the way your team learns, grows, and connects with knowledge.",
             },
             {
-            boldDescription: "Esta tecnología está disponible hoy. Y está más cerca de lo que imaginas.",
+            boldDescription: "This technology is available today. And it's closer than you think.",
             },
         ]}
-        button="Probar SceneSnap en acción"
+        button="Try SceneSnap in action"
     />
     </section>
     </>

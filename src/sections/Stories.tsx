@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type SuccessStoriesProps = {
   langTxt: {
@@ -12,6 +13,7 @@ type SuccessStoriesProps = {
 
 type ListStoriesProps = {
   stories: StoriesItem[];
+  en?: boolean
 }
 
 type StoriesItem = {
@@ -56,7 +58,7 @@ export default function SuccessStories({ langTxt }: SuccessStoriesProps) {
     )
 }
 
-export function ListStories({ stories }: ListStoriesProps) {
+export function ListStories({ stories, en }: ListStoriesProps) {
     return (
         <section id="stories" className="w-full pl-60 pr-50 py-16">
             <div className="mx-auto max-w-[1180px]">
@@ -75,14 +77,12 @@ export function ListStories({ stories }: ListStoriesProps) {
                         {item.description2 && <p>{item.description2}</p>}
                         {item.description3 && <p>{item.description3}</p>}
                     </div>
-                    <a
-                        href={`stories/${item.id}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        href={ en == true ? `/en/stories/${item.id}` : `/stories/${item.id}`}
                         className="mt-8 inline-block rounded-[16px] border-2 border-[#5cbb4a] px-6 py-3 text-[18px] font-medium text-[#5cbb4a] transition hover:bg-[#5cbb4a] hover:text-white"
                         >
                         {item.buttonText}
-                    </a>
+                    </Link>
                     </div>
                     <div>
                     <Image

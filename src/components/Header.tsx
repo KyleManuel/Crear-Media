@@ -23,7 +23,9 @@ const navItems = {
 
 export default function Header() {
   const pathname = usePathname() || "/";
-  const lang = pathname === "/en" || pathname.startsWith("/en/") ? "en" : "es";
+  const lang = pathname === "/en" || pathname.startsWith("/en/") 
+  || pathname === "/ai"
+  ? "en" : "es";
 
   const items = navItems[lang];
   const homeHref = items[0].href;
